@@ -1,0 +1,39 @@
+services:
+  neo4j:
+    image:
+    container_name: medallion_neo4j
+    ports:
+      - 7474:7474
+      - 7687:7687
+    volumes:
+      - $HOME/neo4j/data:/data
+
+  airflow:
+    image:
+    container_name: medallion_airflow
+    ports:
+      - 8080:8080
+
+  marquez:
+    image:
+    container_name: medallion_marquez
+    ports:
+      - 5000:5000
+
+  prometheus:
+    image:
+    container_name: medallion_prometheus
+    ports:
+      - 9090:9090
+
+  grafana:
+    image:
+    container_name: medallion_grafana
+    ports:
+      - 3000:3000
+
+  fast_api:
+    image:
+    container_name: medallion_fast_api
+    ports:
+      - 8000:8000
