@@ -1,3 +1,5 @@
 medallion_env/
 edges.csv
 nodes.csv
+config/
+neo4j/
