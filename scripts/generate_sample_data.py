@@ -32,5 +32,5 @@ edges_df = generate_edges(num_edges, num_nodes)
 
 edges_df = edges_df.unique()
 
-nodes_df.write_csv("nodes.csv")
-edges_df.write_csv("edges.csv")
+nodes_df.write_csv("data/raw/nodes.csv")
+edges_df.write_csv("data/raw/edges.csv")
